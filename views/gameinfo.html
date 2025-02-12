@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS Game</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="../public/style/style.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,11 @@
 <body>
 
     <h1 class="heading gp">GAME POINTS</h1>
+    
     <ul class="container-flex">
-        <li class="points-number" onclick="window.location.href=`/game`" data-name="1">1</li>
-        <li class="points-number" onclick="window.location.href=`/game`" data-name="2">3</li>
-        <li class="points-number" onclick="window.location.href=`/game`" data-name="3">5</li>
+        <a href="game.html"><li class="points-number" data-name="1">1</li></a>
+        <a href="game.html"><li class="points-number" data-name="2">3</li></a>
+        <a href="game.html"><li class="points-number" data-name="3">5</li></a>
     </ul>
     
     <div class="game-info" id="gameInfo">
@@ -35,7 +36,7 @@
 
     <button class="btn htp">HOW TO PLAY</button>
 
-    <script src="/index.js" charset="UTF-8"></script>
+    <script src="../public/index.js" charset="UTF-8"></script>
 
 </body>
 </html>
