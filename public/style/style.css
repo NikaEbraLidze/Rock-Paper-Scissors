@@ -1,0 +1,265 @@
+body{
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    font-family: "Teko", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.heading{
+    font-size: 6rem;
+    color: #e5e3d4;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.btn{
+    background-color: #6a669d;
+    color: #e5e3d4;
+    font-size: 3.6rem;
+    font-weight: bold;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #736fa3;
+    color: white;
+    transition: 0.2s;
+}
+
+.htp{
+    font-size: 2rem;
+}
+
+.container-flex{
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.points-number{
+    width: 100px;
+    height: 100px;
+    background-color: #86a788;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "VT323", serif;
+    font-size: 3.5rem;
+    border: 15px solid #6a669d;
+    color: #e5e3d4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.points-number:hover{
+    width: 102px;
+    height: 102px;
+    font-size: 3.8rem;
+    background-color: #94aa95;
+    color: white;
+    transition: 0.2s;
+    border-color: #736fa3;
+}
+
+.game-info {
+    display: none;
+    background-color: #6a669d;
+    color: #e5e3d4;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 20% auto / 20% 30% 30% 20%  ;
+    place-items: center;
+}
+
+.item-1{
+    grid-area: 1 / 2 / 2 / 4;
+    margin-bottom: 0;
+    font-size: 5rem;
+    margin-top: 0;
+}
+
+.item-2{
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    padding-bottom: 40%;
+}
+
+.item-3{
+    grid-area: 2 / 2 / 3 / 4;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.gameplay{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h3{
+    font-size: 3rem;
+    color: #e5e3d4;
+    margin-bottom: 20px;
+}
+
+h5{
+    font-size: 4rem;
+    color: #e5e3d4;
+    font-family: "VT323", serif;
+    margin-top: 20px;
+}
+
+.gameplay > img{
+    background-color: #6a669d;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 7px solid #6a669d;
+    border-radius: 10px;
+}
+
+.item-2 > img{
+    background-color: #6a669d;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 5px solid #6a669d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    .item-3{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .rps{
+        margin-top: 170px;
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+    }
+
+    .btn{
+        font-size: 1.7rem;
+        padding: 10px 50px;
+    }
+
+    .points-number{
+        width: 50px;
+        height: 50px;
+        font-size: 3rem;
+    }
+    
+    .points-number:hover{
+        width: 52px;
+        height: 52px;
+        font-size: 3.1rem;
+    }
+    
+    .htp{
+        font-size: 1.3rem;
+    }
+    
+    .container-flex{
+        gap: 20px;
+    }
+
+    .gp{
+        margin-top: 150px;
+        margin-bottom: 20px;
+        font-size: 3.4rem;
+    }
+    
+    .container-grid{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 80px;
+    }
+    
+    .item-1{
+        margin-bottom: 0;
+        font-size: 3.4rem;
+    }
+    
+    .item-2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 50px;
+        align-items: flex-start;
+    }
+
+    .item-3{
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    h3{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    h5{
+        margin-bottom: 20px;
+    }
+    
+    .gameplay > img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .item-2 > img{
+        width: 55px;
+        height: 55px;
+    }
+}
